@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <title>Occupations</title>
+    <p>
+      Looking for a job?
+    </p>
+    <table border="1" width="500">
+      <tr>
+	<th>Job Class</th>
+	<th>Percentage</th>
+      </tr>
+      {%- for item in dict %}
+      <tr>
+	<td>{{item}}</td>
+	<td>{{dict[item]}}</td>
+      </tr>
+      {%- endfor %}
+    </table>
+    <p>
+    Your randomized fate:
+    <p>
+      The job for YOU is {{RandOpp}}!!!
+    </p>
+  </body>
+</html>

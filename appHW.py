@@ -1,5 +1,5 @@
 import random
-from flask import Flask, render_template
+from flask import Flask, render_template, util.occupations
 app = Flask(__name__)
 
 @app.route("/")

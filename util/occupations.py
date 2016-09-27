@@ -1,6 +1,6 @@
 import random
 
-occupations = open('occupations.csv','r')
+occupations = open("../occupations.csv",'r')
 occupations = occupations.read()
 occupations = occupations.split('\n')
 occupations = occupations[1:len(occupations)-1] #removes the job class and the total
